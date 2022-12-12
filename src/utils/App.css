@@ -1,0 +1,91 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    border-radius: 99px !important;
+}
+.hidden {
+    display: none !important;
+}
+.greenText {
+    /* color: #CCFF90; */
+    color: rgb(33 182 111);
+    font-family: monospace;
+}
+.btnDisabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.addPadding {
+    padding: 1em 1em 2em 1em;
+}
+
+.boxStyle {
+    /* backgroundColor: #333333; */
+    border-color: #444444;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 3em 0 3em 1em;
+    /* box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px, rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px; */
+}
+
+.metricsPanel {
+    min-height: 350px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.voteButtons button {
+    margin: 0.5em 1em 1em 0em;
+}
+
+
+
+.daoProfile {
+    width:100%;
+    text-align: center;
+}
+.daoLogo {
+    height:80px;
+    width:80px;
+    background-color:white;
+    border-radius: 99px;
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+.daoName {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0.2em 0;
+}
+.daoMembers {
+    color: #8b949e;
+    font-weight: bold;
+    margin:0.2em 0;
+}
+.daoJoin {
+    background-color:#384aff !important;
+    margin:0.5em 0 !important;
+}
+.daoMenu {
+    margin-top:2em;
+}
+
+
+
+
+
+.aniBack {
+    display:block;
+}
+.aniHidden {
+    display:none;
+}
