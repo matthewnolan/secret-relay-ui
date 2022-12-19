@@ -20,9 +20,10 @@ button {
 }
 
 ul.no-bullets {
-    list-style-type: none;
+    /* list-style-type: none; */
     padding: 0;
     margin: 0;
+    font-size: 1.2em;
 }
 .addPadding {
     padding: 1em 1em 2em 1em;
@@ -57,7 +58,7 @@ ul.no-bullets {
 .daoLogo {
     height:80px;
     width:80px;
-    background-color:white;
+    background-color:#999;
     border-radius: 99px;
     margin-bottom: 0.5em;
     display: inline-block;

@@ -381,17 +381,18 @@ const Index = () => {
                   </Button>
                 </div>                
                 <div className="metricsPanel">
-                  <div className="greenText"><strong>Secret Bal:</strong> {myBal}</div>
-                  <div className="greenText"><strong>Proposal ID:</strong> {globalVar.propId}</div>
+                    <div><strong>Data from Ethereum</strong></div>
+                    <div className="greenText"><strong>ETH addy:</strong> {truncateAddress(secretEthAddy)}</div>
+                    <div className="greenText"><strong>Voting Weight:</strong> {secretvotingTokenBal}</div>
                   <p className="voteButtons">
                     <div><strong>Actions</strong></div>
                   <Button variant="outlined" color="secondary" onClick={signEthTx} className={voteReady ? "" : "btnDisabled"}>New Proposal</Button>
                   {/* <Button variant="outlined" color="secondary" onClick={signEthTx} className={voteReady ? "" : "btnDisabled"}>Get Vote Result</Button> */}
                   </p>
                   <p>
-                    <div><strong>Data from Ethereum</strong></div>
-                    <div className="greenText"><strong>ETH addy:</strong> {truncateAddress(secretEthAddy)}</div>
-                    <div className="greenText"><strong>Voting Token Weight:</strong> {secretvotingTokenBal}</div>
+                    <div><strong>Secret Info</strong></div>
+                    <div className="greenText"><strong>Secret Bal:</strong> {myBal}</div>
+                    <div className="greenText"><strong>Proposal ID:</strong> {globalVar.propId}</div>
                     {/* <div className="greenText"><strong>Voter Whitelist TX:</strong> {secretWhitelistTx}</div> */}
                   </p>
                   {/* <div><strong>Proposal Start Time:</strong> </div> */}
@@ -459,8 +460,9 @@ const Index = () => {
                 >
                   {ethersReady ? truncateAddress(signerAddressEth) : "Connect MetaMask"}
                 </Button>
-              </div>              
+              </div>
               <div className="metricsPanel">
+                <div><strong>Ethereum Info</strong></div>
                 <div className="greenText"><strong>My Eth Bal:</strong> {balanceEth}</div>
                 <div className="greenText"><strong>Voting Token Balance:</strong> {ethersReady ? globalVar.votingTokenBal : ""}</div>
                 <p className="voteButtons">
