@@ -346,7 +346,7 @@ const Index = () => {
         <Grid container direction="row" justifyContent="center" alignItems="center" className={classes.heroSpace}>
           <Grid item xs={12}>
             {/* <h1>{appStatusMessage}</h1> */}
-            <h1>Secret Voting on Ethereum Technical Demo</h1>
+            <h2>Secret Voting on Ethereum Technical Demo</h2>
           </Grid>
           {/* e grid item */}
         </Grid>
@@ -361,7 +361,7 @@ const Index = () => {
           direction="row"
           justifyContent="space-between"
           alignItems="stretch">
-          <Grid item xs={12} sm={5} className={classes.boxStyle}>
+          <Grid item xs={12} sm={4} className={classes.boxStyle}>
             <div className="addPadding">
                 <h1>Secret Side</h1>
                 <div>
@@ -390,9 +390,9 @@ const Index = () => {
                   </p>
                   <p>
                     <div><strong>Data from Ethereum</strong></div>
-                    <div className="greenText"><strong>Whitelisted ETH addy:</strong> {truncateAddress(secretEthAddy)}</div>
+                    <div className="greenText"><strong>ETH addy:</strong> {truncateAddress(secretEthAddy)}</div>
                     <div className="greenText"><strong>Voting Token Weight:</strong> {secretvotingTokenBal}</div>
-                    <div className="greenText"><strong>Voter Whitelist TX:</strong> {secretWhitelistTx}</div>
+                    {/* <div className="greenText"><strong>Voter Whitelist TX:</strong> {secretWhitelistTx}</div> */}
                   </p>
                   {/* <div><strong>Proposal Start Time:</strong> </div> */}
                   {/* <div><strong>Proposal End Time:</strong> </div> */}
@@ -420,13 +420,27 @@ const Index = () => {
               </div>
           </Grid>
 
-          {/* <Grid item xs={12} sm={2} alignItems="center" className="animiddle" style={{ display: "flex", justifyContent: "flex-start", textAlign: "center" }}>
+          {/* <Grid item xs={12} sm={4} alignItems="center" className="animiddle" style={{ display: "flex", justifyContent: "flex-start", textAlign: "center" }}>
             <div style={{ width: "100%", textAlign: "center" }} className={aniRelay ? "aniBack" : "aniHidden"}>
               <ArrowBack fontSize="large" />
-            </div>
-          </Grid> */}
+            </div> */}
 
-          <Grid item xs={12} sm={5} className={classes.boxStyle}>
+          <Grid item xs={12} sm={3} alignItems="center" style={{ display: "flex", justifyContent: "flex-start"}}>
+            <div className="addPadding">
+              <h2>Relayer Task 1</h2>
+              <div className={voteReady ? "" : "btnDisabled"}>
+                <ul className="no-bullets greenText">
+                  <li>Verifying ETH address</li>
+                  <li>Querying ETH token val</li>
+                  <li>Connecting to Secret</li>
+                  <li>Submiting voter data</li>
+                  <li>Voter added</li>
+                </ul>
+              </div>
+            </div>
+          </Grid>
+
+          <Grid item xs={12} sm={4} className={classes.boxStyle}>
             <div className="addPadding">
               <h1>Ethereum Side</h1>
               <div >
@@ -469,7 +483,7 @@ const Index = () => {
           </Grid>
 
 
-          <Grid container spacing={1} maxWidth="lg" className={classes.boxStyle} container direction="row" justifyContent="center" alignItems="center">
+          <Grid container spacing={1} maxWidth="lg" className={classes.boxStyle} container direction="row" justifyContent="center" alignItems="center" style={{display: 'none'}}>
             <Grid container item xs={12} spacing={3}>
               <Grid item xs={4}>
                 <div className="addPadding">
@@ -667,8 +681,8 @@ const useStyles = makeStyles((theme) => ({
   // },
   heroSpace: {
     textAlign: 'center',
-    marginTop: '2em',
-    marginBottom: '2em'
+    marginTop: '1em',
+    marginBottom: '1em'
   },
   modal: {
     display: 'flex',

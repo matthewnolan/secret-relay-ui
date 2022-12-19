@@ -11,9 +11,10 @@ button {
     /* color: #CCFF90; */
     color: rgb(33 182 111);
     font-family: monospace;
+    font-size: 1.4em;
 }
 .btnDisabled {
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: not-allowed;
     pointer-events: none;
 }

@@ -29,12 +29,12 @@ const Navbar = ({ toggleMode, darkMode }) => {
     <AppBar position="static" className={classes.root}>
       <Toolbar>
         {/* <img src="/logo.svg" alt="logo" className={classes.img} /> */}
-        <Typography variant="h4">
-        🤫
+        <Typography variant="h5" className={classes.title}  style={{ color: "green", marginRight: "1em" }} >
+        Timber Network
         </Typography>
 
-        <Typography variant="h6" className={classes.title}>
-          The Secret Ballot DAO
+        <Typography variant="h5" className={classes.title}>
+          🤫 The Secret Ballot DAO
         </Typography>
 
 

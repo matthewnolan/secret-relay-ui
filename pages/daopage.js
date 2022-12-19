@@ -373,7 +373,7 @@ const Index = () => {
               </Button>
             </div>
           </Grid>
-          <Grid item xs={12} style={{marginTop: '2em'}}>
+          <Grid item xs={12} style={{marginTop: '2em', display: 'none'}}>
             <h1>{appStatusMessage}</h1>
           </Grid>
           {/* e grid item */}
@@ -386,7 +386,7 @@ const Index = () => {
               <div className={classes.boxStyle}>
                 <div className="daoProfile">
                   <div className="daoLogo"></div>
-                  <div className="daoName">UniChain DAO</div>
+                  <div className="daoName">Any Ethereum DAO</div>
                   <div className="daoMembers">6.4k members</div>
                   <Button variant="contained" color="primary" size="small" className="daoJoin">
                     Joined
