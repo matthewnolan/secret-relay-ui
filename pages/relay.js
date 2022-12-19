@@ -516,7 +516,7 @@ const Index = () => {
                   <div><button onClick={increment}>Increment</button></div>
                   <div><button onClick={signEthTx}>signEthTx / callRelayWhitelist</button></div>
                   <div><button onClick={callRelayWhitelist}>callRelayWhitelist</button></div>
-                  <button type="button" onClick={handleModalOpen}>pop modal</button>
+                  {/* <button type="button" onClick={handleModalOpen}>pop modal</button> */}
                   {/* <p><strong>Counter:</strong> {count}</p> */}
 
                 </div>

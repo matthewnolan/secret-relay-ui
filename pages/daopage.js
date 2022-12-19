@@ -107,6 +107,7 @@ const Index = () => {
       // console.log(`broadcasted tx=${JSON.stringify(tx)}`);
       // console.log(tx);
       console.log(tx.transactionHash);
+      handleModalOpen();
       // let showTxUrl = "https://secretnodes.com/pulsar/transactions/" + tx.transactionHash;
       // TODO open this TX https://secretnodes.com/pulsar/transactions/
       const { count } = await secretjs.query.compute.queryContract({
@@ -402,6 +403,8 @@ const Index = () => {
                   >
                     Create Proposal
                   </Button>
+                  {/* <button type="button" onClick={handleModalOpen}>pop modal</button> */}
+
                 </div>
               </div>
 
